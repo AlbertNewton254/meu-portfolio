@@ -177,6 +177,13 @@ footer {
     background-color: #666;
 }
 
+/* 🌙 Modo Escuro */
+.dark-mode .header-section:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Um tom mais brilhante */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Brilho mais forte */
+}
+
+
 /* Responsividade */
 @media (max-width: 768px) {
     .plans-container {
