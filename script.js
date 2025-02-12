@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
     console.log("Script carregado com sucesso!");
-
     initThemeToggle();
     initHeaderNavigation();
 });
