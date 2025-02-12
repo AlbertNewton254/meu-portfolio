@@ -1,18 +1,46 @@
+/* 🌞 Modo Claro (Padrão) */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #000000, #f50000)
+    background-color: #aaa;
+    color: #333;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
+/* Header */
 header {
-    background-color: #0000aa;
-    color: #fff;
+    background-color: #fff;  /* Fundo claro no modo claro */
+    color: #333;  /* Texto escuro para contraste */
     text-align: center;
     padding: 20px 10px;
+    transition: background 0.3s ease;
 }
 
+/* Container do header */
+#nav-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espaçamento entre os links */
+}
+
+.header-section {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.3s, box-shadow 0.3s ease; /* Efeito de transição */
+}
+
+/* Efeito de brilho nas divs */
+.header-section:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Cor de fundo mais suave no hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Container principal */
 main {
     max-width: 800px;
     margin: 20px auto;
@@ -22,29 +50,93 @@ main {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Seções */
 .section {
     margin-bottom: 20px;
 }
 
-h2 {
-    color: #333;
+h1, h2 {
+    color: #333; /* Cor do texto do título no modo claro */
 }
 
+/* Planos de estudo */
 .plan {
     background: #eee;
     padding: 15px;
     border-radius: 5px;
     margin-bottom: 10px;
 }
+
+/* Alerta */
 .alert {
     background: #ffdddd;
     padding: 10px;
     border-left: 5px solid red;
 }
+
+/* Footer */
 footer {
     text-align: center;
     padding: 10px;
-    background: #0000aa;
+    background: #333;
     color: white;
     margin-top: 20px;
+}
+
+/* 🔵 Botão de alternância de tema */
+#toggleTheme {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #aaa;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+#toggleTheme:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}
+
+/* 🌙 Modo Escuro */
+.dark-mode {
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+.dark-mode header, .dark-mode footer {
+    background-color: #222;
+}
+
+.dark-mode main {
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode h1, .dark-mode h2 {
+    color: #ddd; /* Mesma cor para h1 e h2 no modo escuro */
+}
+
+.dark-mode .plan {
+    background: #1e1e1e;
+    border: 1px solid #444;
+}
+
+.dark-mode .alert {
+    background: #662222;
+    border-left: 5px solid #ff4444;
+}
+
+.dark-mode #toggleTheme {
+    background-color: #444;
+}
+
+.dark-mode #toggleTheme:hover {
+    background-color: #666;
 }
