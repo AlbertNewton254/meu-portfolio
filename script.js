@@ -19,7 +19,7 @@ function initThemeToggle() {
         document.body.classList.toggle("dark-mode");
 
         const isDarkMode = document.body.classList.contains("dark-mode");
-        toggleButton.innerText = isDarkMode ? "☀️ Modo Claro" : "🌙 Modo Escuro";
+        toggleButton.innerHTML = `<i class="fas ${isDarkMode ? 'fa-sun' : 'fa-moon'}"></i> ${isDarkMode ? 'Modo Claro' : 'Modo Escuro'}`;
 
         // Salva a preferência do tema no localStorage
         localStorage.setItem("theme", isDarkMode ? "dark" : "light");
@@ -28,7 +28,7 @@ function initThemeToggle() {
     // Aplica o tema salvo
     if (localStorage.getItem("theme") === "dark") {
         document.body.classList.add("dark-mode");
-        toggleButton.innerText = "☀️ Modo Claro";
+        toggleButton.innerHTML = `<i class="fas fa-sun"></i> Modo Claro`;
     }
 }
 
