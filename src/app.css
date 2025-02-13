@@ -261,3 +261,11 @@ footer {
   color: #333;
   font-size: 16px;
 }
+
+.image {
+  width: 300px;  /* Defina um tamanho */
+  height: 300px; /* Mesmo valor da largura para manter o círculo */
+  margin-left: 250px;
+  border-radius: 50%;
+  object-fit: cover; /* Para cortar corretamente e manter o foco */
+}
