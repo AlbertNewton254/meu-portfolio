@@ -64,7 +64,7 @@ Para rodar este projeto localmente, siga os passos abaixo:
    npm run dev
    ```
 
-Após esses passos, a aplicação estará rodando. Você pode acessar [http://localhost:3000](http://localhost:3000) no seu navegador.
+Após esses passos, a aplicação estará rodando. Você pode acessar [http://localhost:5173](http://localhost:5173) no seu navegador.
 
 ## Contribuições
 
