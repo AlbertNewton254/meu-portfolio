@@ -1,6 +1,6 @@
 # Meu Portfolio
 
-Um projeto de portfolio pessoal desenvolvido com **React** e **Vite**. Este projeto serve como uma vitrine para apresentar meus projetos, habilidades e experiências, utilizando uma estrutura simples, moderna e responsiva.
+Uma landing page desenvolvida com **React** e **Vite**. Este projeto serviu para, além de uma iniciativa pessoal (aulas particulares de exatas), testar as minhas habilidades em front-end, com direito ao uso de HTML, CSS e JavaScript com React JS. Estrutura simples, moderna e responsiva.
 
 ## Tecnologias Utilizadas
 
