@@ -1,0 +1,23 @@
+/* 🌞 Modo Claro (Padrão) */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #aaa;
+  color: #333;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .plans-container {
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .plans-container {
+      grid-template-columns: 1fr;
+  }
+} 

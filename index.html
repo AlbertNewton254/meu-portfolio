@@ -1,121 +1,19 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aulas de matemática, física e química com Miguel Mochizuki. Aprenda de forma acessível e eficiente para o Enem e vestibulares.">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Miguel Mochizuki - Aulas de Exatas</title>
-    
+
     <!-- Material UI -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header id="mainHeader">
-        <h1>Miguel Mochizuki</h1>
-        <nav>
-            <div id="nav-container">
-                <div class="header-section">
-                    <a href="#about" aria-label="Seção Sobre">Sobre</a>
-                </div>
-                <div class="header-section">
-                    <a href="#goals" aria-label="Seção Metas">Metas</a>
-                </div>
-                <div class="header-section">
-                    <a href="#plans" aria-label="Seção Planos">Planos</a>
-                </div>
-                <div class="header-section">
-                    <a href="#contact" aria-label="Seção Contato">Contato</a>
-                </div>
-            </div>
-        </nav>
-        <button id="toggleTheme" aria-label="Alternar entre Modo Claro e Escuro">
-            <i class="fas fa-moon"></i> Modo Escuro
-        </button>
-    </header>
-
-    <main>
-        <section class="section" id="about">
-            <h2>Sobre mim</h2>
-            <p>Olá! Meu nome é Miguel, tenho dezesseis anos e estou prestes a iniciar o curso de Ciência da Computação na Universidade Federal da Paraíba (2025.1). </p>
-            <p>Sou entusiasta das ciências exatas: estudei sozinho todo o conteúdo de matemática, de física e de química do Ensino Médio durante a pandemia, e aprimorei posteriormente meus conhecimento em matemática, sob certificação do MIT em Cálculo Diferencial e Integral (2021-2022). </p>
-            <p>Fui pesquisador PIBIC/CNPq júnior em Matemática pela UFPB, trabalhando no projeto “Equações Diferenciais Parciais e Análise Geométrica” (2022-2023), sob a orientação do professor Dr. João Marcos Bezerra do Ó. Nele, estudei a matemática que é usada como base da física e da química modernas, e fui agraciado com o prêmio Jovem Pesquisador 2023, com o trabalho “Análise e Geometria em Variedades Riemannianas”.</p>
-            <p>Tenho experiência com programação, utilizando Python para projetos pessoais, além de ter um domínio avançado de inglês, intermediário de espanhol e francês, o que me permitiu trabalhar diretamente com textos de pesquisa em diferentes idiomas.</p>
-            <p>Além disso, obtive mais de 800 pontos em Matemática no Enem 2024, com 40 questões acertadas. Minha missão é ajudar você a aprender de forma eficiente e acessível as ciências exatas, tornando-as uma vocação e um direito a ser exercido por todos!</p>
-        </section>
-
-        <section class="section" id="goals">
-            <h2>Nossos objetivos</h2>
-            <ul>
-                <li>Te ajudar a conseguir as melhores notas em exatas no Enem e em outros vestibulares;</li>
-                <li>Te ajudar a ser capaz de andar com os seus próprios pés nos seus estudos (adeus macetes!);</li>
-                <li>Ser um investimento acessível a todos.</li>
-            </ul>
-        </section>
-
-        <section class="section" id="plans">
-            <h2>Planos de estudo</h2>
-            <div class="plans-container">
-                <div class="plan-item">
-                    <h3>Aula avulsa</h3>
-                    <ul class="without-dots">
-                        <li>R$60,00 por uma hora</li>
-                        <li>R$110,00 por duas horas</li>
-                        <li>R$150,00 por três horas</li>
-                    </ul>
-                </div>
-
-                <div class="plan-item">
-                    <h3>Plano mensal</h3>
-                    <ul class="without-dots">
-                        <li>4 horas de aula em um mês, a R$180,00</li>
-                    </ul>
-                </div>
-
-                <div class="plan-item">
-                    <h3>Plano trimestral</h3>
-                    <ul class="without-dots">
-                        <li>12 horas de aula em três meses, a R$500,00</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="alert">
-                <p><strong>Os valores acima são TODOS negociáveis.</strong></p>
-            </div>
-        </section>
-
-        <!-- Seção de Contato -->
-        <section class="section" id="contact">
-            <h2>Contato</h2>
-            <form id="contact-form" action="https://formsubmit.co/miguelmochizukisilva@gmail.com" method="POST">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_subject" value="Nova mensagem do site!">
-                <label for="name">Nome</label>
-                <input type="text" id="name" name="name" required>
-            
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" required>
-            
-                <label for="message">Mensagem</label>
-                <textarea id="message" name="message" required></textarea>
-            
-                <button type="submit">Enviar</button>
-            </form>
-            
-            <p>Ou entre em contato pelo telefone:</p>
-            <a href="tel:+5583991998942">Ligue agora!</a>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Miguel Mochizuki</p>
-    </footer>
-    
-    <script src="script.js" type="text/javascript"></script>
-</body>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
